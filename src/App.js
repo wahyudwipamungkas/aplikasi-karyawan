@@ -1,8 +1,8 @@
 import React from "react";
 import './App.css'
 import { Container } from 'react-bootstrap';
-import ListUser from "./Components/ListUser";
 import HalamanBaru from "./HalamanBaru";
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <Container>
         <h3>Members</h3>
-        <a href="#HalamanBaru">Button</a>
-        <ListUser />
+        <Link to={"./HalamanBaru"}>
         <HalamanBaru />
+        </Link>
       </Container>
     </div>
   );
